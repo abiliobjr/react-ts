@@ -1,0 +1,18 @@
+.nav-bar {
+    background-color: $primary;
+    // padding: 1em;
+    &::before {
+        content: '';
+        height: 1vh;
+        display: block;
+        background-color: $primary-dark;
+        margin-bottom: 1em;
+    }
+    .logo {
+        color: $black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2em;
+    }
+}
