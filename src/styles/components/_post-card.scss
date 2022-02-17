@@ -1,0 +1,33 @@
+.post-card {
+    flex: 1 0 21%;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 1em;
+    border-left: 8px solid $secondary;
+    border-radius: 0px 10px 0px 10px;
+    box-shadow: 1px 1px 1px rgba($color: #000000, $alpha: .1);
+    position: relative;
+    padding-bottom: 4em;
+    .title {
+        text-align: center;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+        text-decoration: none;
+        color: $primary-dark;
+        display: block;
+    }
+    .body {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .seemore {
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
+        text-decoration: none;
+    }
+}
