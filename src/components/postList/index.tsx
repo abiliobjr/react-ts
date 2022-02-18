@@ -5,13 +5,10 @@ import PostCard from '../postCard'
 const PostsList = () => {
     const { posts } = useContext(PostsContext);
     return (
-        <div>
+        <div className='container'>
             {
                 posts.map(post => (
-                    <div key={post.id}>
-                        <h2>{post.title}</h2>
-                        <p>{post.body}</p>
-                    </div>
+                    <PostCard id={post.id} title={post.title} body={post.body} />
                 ))
             }
         </div>
